@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>CloudCart Store</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <nav class="navbar">
+
+    <div class="logo">
+      CloudCart
+    </div>
+
+    <ul class="nav-links">
+
+      <li><a href="#">Home</a></li>
+
+      <li><a href="#">Products</a></li>
+
+      <li><a href="#">Orders</a></li>
+
+      <li><a href="#">Contact</a></li>
+
+    </ul>
+
+    <div class="search-box">
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+      />
+
+      <button onclick="searchProducts()">
+        Search
+      </button>
+
+    </div>
+
+  </nav>
+
+  <!-- Hero Section -->
+
+  <section class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+      <h1>
+        Modern E-Commerce Platform
+      </h1>
+
+      <p>
+        Shop premium shoes, watches, hoodies and fashion products.
+      </p>
+
+      <button class="shop-btn">
+        Start Shopping
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- Featured Products -->
+
+  <section class="products-section">
+
+    <h2 class="section-title">
+      Featured Products
+    </h2>
+
+    <div
+      class="products-container"
+      id="productsContainer"
+    >
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+
+    <h3>CloudCart</h3>
+
+    <p>
+      Production Style Full Stack E-Commerce Platform
+    </p>
+
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
