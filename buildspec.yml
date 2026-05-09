@@ -51,4 +51,4 @@ phases:
 
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$BACKEND_REPO:$IMAGE_TAG
 
-      - echo Build completed successfully...
+      - echo Build completed successfully
