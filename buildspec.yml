@@ -32,23 +32,23 @@ phases:
 
       - echo Building backend Docker image...
 
-      - cd backend
+#      - cd backend
+#
+#     - docker build -t $BACKEND_REPO:$IMAGE_TAG .
+#
+#      - docker tag $BACKEND_REPO:$IMAGE_TAG $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$BACKEND_REPO:$IMAGE_TAG
+#
+#      - cd ..
 
-      - docker build -t $BACKEND_REPO:$IMAGE_TAG .
-
-      - docker tag $BACKEND_REPO:$IMAGE_TAG $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$BACKEND_REPO:$IMAGE_TAG
-
-      - cd ..
-
-  post_build:
-    commands:
+#  post_build:
+#    commands:
 
       - echo Pushing frontend image to ECR...
 
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$FRONTEND_REPO:$IMAGE_TAG
 
-      - echo Pushing backend image to ECR...
+#      - echo Pushing backend image to ECR...
 
-      - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$BACKEND_REPO:$IMAGE_TAG
+#      - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$BACKEND_REPO:$IMAGE_TAG
 
       - echo Build completed successfully
